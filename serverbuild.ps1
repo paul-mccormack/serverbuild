@@ -5,7 +5,7 @@
 ######################################33
 
 #variables
-$regionalsettingsURL = "https://dev.azure.com/scc-ddat-infrastructure/Azure%20Server%20Build/_git/Azure%20Server%20Build?path=/GBRegion.xml"
+$regionalsettingsURL = "https://raw.githubusercontent.com/paul-mccormack/serverbuild/main/GBRegion.xml"
 $RegionalSettings = "D:\GBRegion.xml"
 
 
