@@ -24,6 +24,9 @@ Set-Culture -CultureInfo en-GB
 Set-WinHomeLocation -GeoId 242
 Set-TimeZone -Id "GMT Standard Time"
 
+# Create a file to see if the script ran
+New-Item -Path "D:\" -Name "script_ran.txt"
+
 # restart virtual machine to apply regional settings to current user. You could also do a logoff and login.
 Start-sleep -Seconds 40
 Restart-Computer
