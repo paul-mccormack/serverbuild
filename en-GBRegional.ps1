@@ -4,9 +4,10 @@
 #
 ######################################33
 
+New-Item -ItemType Directory -Path "C:\Regional"
 #variables
 $regionalsettingsURL = "https://raw.githubusercontent.com/paul-mccormack/serverbuild/main/GBRegion.xml"
-$RegionalSettings = "C:\Temp\GBRegion.xml"
+$RegionalSettings = "C:\Regional\GBRegion.xml"
 
 
 #downdload regional settings file
@@ -25,7 +26,7 @@ Set-WinHomeLocation -GeoId 242
 Set-TimeZone -Id "GMT Standard Time"
 
 # Create a file to see if the script ran
-New-Item -Path "C:\Temp\" -Name "enUK-Regional-Applied.txt"
+New-Item -Path "C:\Regional\" -Name "enUK-Regional-Applied.txt"
 
 # restart virtual machine to apply regional settings to current user. You could also do a logoff and login.
 Start-sleep -Seconds 40
